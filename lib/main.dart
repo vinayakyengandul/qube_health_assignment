@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qube_health_assignment/binding.dart';
+import 'package:qube_health_assignment/page_one.dart';
+import 'package:qube_health_assignment/page_two.dart';
 import 'package:qube_health_assignment/view.dart';
 
 void main() {
@@ -25,6 +27,14 @@ class MyApp extends StatelessWidget {
           name: '/',
           page: () => HomePage(),
           binding: HomeBinding(),
+        ),
+        GetPage(
+          name: '/one',
+          page: () => PageOne(),
+        ),
+        GetPage(
+          name: '/two',
+          page: () => PageTwo(),
         ),
       ],
     );
